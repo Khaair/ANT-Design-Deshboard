@@ -56,6 +56,70 @@ const App = () => (
                 </Menu.ItemGroup>
               </SubMenu>
             </Menu>
+
+            <Menu
+              defaultSelectedKeys={['Dashboard']}
+              mode="inline"
+              
+            >
+            
+              <SubMenu
+                title={
+                  <span>
+                   
+                    <span>Product</span>
+                  </span>
+                }
+              >
+                <Menu.ItemGroup key='AboutUS' title='Country 1'>
+                  <Menu.Item key='location1'> Location 1</Menu.Item>
+                  <Menu.Item key='location2'> Location 2</Menu.Item>
+                </Menu.ItemGroup>
+              </SubMenu>
+            </Menu>
+           
+
+            <Menu
+              defaultSelectedKeys={['Dashboard']}
+              mode="inline"
+            >
+            
+              <SubMenu
+                title={
+                  <span>
+                   
+                    <span>Administration</span>
+                  </span>
+                }
+              >
+                <Menu.ItemGroup key='AboutUS' title='Country 1'>
+                  <Menu.Item key='location1'> Location 1</Menu.Item>
+                  <Menu.Item key='location2'> Location 2</Menu.Item>
+                </Menu.ItemGroup>
+              </SubMenu>
+            </Menu>
+           
+
+            <Menu
+              defaultSelectedKeys={['Dashboard']}
+            
+            >
+            
+              <SubMenu
+                title={
+                  <span>
+                   
+                    <span>Services</span>
+                  </span>
+                }
+              >
+                <Menu.ItemGroup key='AboutUS' title='Country 1'>
+                  <Menu.Item key='location1'> Location 1</Menu.Item>
+                  <Menu.Item key='location2'> Location 2</Menu.Item>
+                </Menu.ItemGroup>
+              </SubMenu>
+            </Menu>
+           
            
         </Sider>
         <Content style={{background:"blue",height:"440px"}}>Content hiii</Content>
