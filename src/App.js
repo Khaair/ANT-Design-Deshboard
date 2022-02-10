@@ -1,25 +1,68 @@
-import logo from './logo.svg';
+import { Layout, Menu } from 'antd';
+import SubMenu from 'antd/lib/menu/SubMenu';
+import { default as Title } from 'antd/lib/skeleton/Title';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const { Header, Footer, Sider, Content } = Layout;
+
+const App = () => (
+  <div className="App">
+     <Layout>
+      <Header style={{ padding: 10 }}>
+      
+          <Title style={{ color: 'red' }}>SHRIDEEP</Title>
+      </Header>
+      <Layout  >
+        <Sider style={{background:"#001529"}}>
+        <Menu
+              defaultSelectedKeys={['Dashboard']}
+              mode="inline"
+            >
+              <Menu.Item key='Dashboard'>
+                Dashboard
+            </Menu.Item>
+              <SubMenu
+                title={
+                  <span>
+                   
+                    <span>Home</span>
+                  </span>
+                }
+              >
+                <Menu.ItemGroup key='AboutUS' title='Country 1'>
+                  <Menu.Item key='location1'> Location 1</Menu.Item>
+                  <Menu.Item key='location2'> Location 2</Menu.Item>
+                </Menu.ItemGroup>
+              </SubMenu>
+            </Menu>
+
+            <Menu
+              defaultSelectedKeys={['Dashboard']}
+              mode="inline"
+            >
+            
+              <SubMenu
+                title={
+                  <span>
+                   
+                    <span>About US</span>
+                  </span>
+                }
+              >
+                <Menu.ItemGroup key='AboutUS' title='Country 1'>
+                  <Menu.Item key='location1'> Location 1</Menu.Item>
+                  <Menu.Item key='location2'> Location 2</Menu.Item>
+                </Menu.ItemGroup>
+              </SubMenu>
+            </Menu>
+           
+        </Sider>
+        <Content style={{background:"blue",height:"440px"}}>Content hiii</Content>
+      </Layout>
+      <Footer style={{ textAlign: 'center' }}>Ant Design Layout example Created by Shrideep</Footer>
+    </Layout>
+  </div>
+);
 
 export default App;
