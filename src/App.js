@@ -60,7 +60,7 @@ const App = () => (
         </Sider>
         <Content style={{background:"blue",height:"440px"}}>Content hiii</Content>
       </Layout>
-      <Footer style={{ textAlign: 'center' }}>Ant Design Layout example Created by Shrideep</Footer>
+      <Footer style={{ textAlign: 'center' }}>Ant Design Layout example Created by Khair</Footer>
     </Layout>
   </div>
 );
